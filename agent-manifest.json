@@ -1,0 +1,10 @@
+{
+  "project": "Editable-Shabbat-Flyer",
+  "status": "portable-source-setup-documented",
+  "setup": "SETUP.md",
+  "activation_enabled": false,
+  "private_data_included": false,
+  "source_history": "Shared portable-workspace Git snapshot; preserve original upstream history when publishing.",
+  "repository_layout": "shared portable-source monorepo; preserve all sibling folders",
+  "source_setup_status": "locked-install-build-or-standard-library-tests-verified"
+}

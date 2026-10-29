@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "repository": "kahasgolem/kbt-flyers",
+  "visibility": "public",
+  "history": "current-source snapshot; original history not imported; original source/recovery remains untouched",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 125,
+      "sha256": "d229432d4e0884b61a8616f6fee4abbb6eb1d3f7362e5f7083b3a8e086027847",
+      "git_blob_sha": "bd924080f890d9290f6d11402dd2af31456f4111"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 480,
+      "sha256": "4d6cfd82a2208e36120fcf66c0dfaddcd4add076e24be99a2c7b72f82dd15a69",
+      "git_blob_sha": "6ceb54e43018ea7e7940bb0b4bd56d2e0059649e"
+    },
+    {
+      "path": "PUBLICATION_SCAN.json",
+      "bytes": 731,
+      "sha256": "6704536d781f13bbfeef8c3617b989d2e586666966678e4a6f6506308fb471c3",
+      "git_blob_sha": "2bb30ea0589991203a40d7219ba02b86b4ec25e9"
+    },
+    {
+      "path": "PUBLICATION_STATUS.md",
+      "bytes": 1167,
+      "sha256": "28db7df335f3c1327a1044e29a30af026f7b9caf2b37623cb7f3bbc8caa5ffe3",
+      "git_blob_sha": "66df671b5af75e8501ae220a2ab5da5d2c62654f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 362,
+      "sha256": "88a267e7246223994adb71c6d8899d324fc3331574c95350e5e7f2bbfd7f7a11",
+      "git_blob_sha": "5fdc6cef644f3cde78ca8ddbf596997d11e432c0"
+    },
+    {
+      "path": "SETUP.md",
+      "bytes": 379,
+      "sha256": "5a0d5b2d211c7da9d0ec9738f93e23a5417347164ad64a1dd40cd5b51052af26",
+      "git_blob_sha": "a2541d576e5df361fe64d475e40aee7f08e13b23"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 696,
+      "sha256": "d540ca7c8e3f71b1359d171d7ed7cae8e882c0a3bf0b5f32b7ea73fabeeba797",
+      "git_blob_sha": "c7131fbf170194c6cca00d4fc63d1133087077ec"
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 373,
+      "sha256": "4834fabcb7fffa0256426c6a2a471e924bf222cf08104aafb5cec0238758cf19",
+      "git_blob_sha": "bc812dbccd07c192eb4fe6810991ae0d8a4139f3"
+    },
+    {
+      "path": "agent-manifest.json",
+      "bytes": 475,
+      "sha256": "2fee557d42e107f845d66c0e89ed95957be83f712d364492dac402b955cf07f4",
+      "git_blob_sha": "c7758eb7c75b2faa6c7070e5ed596df33b846e9d"
+    },
+    {
+      "path": "provenance/historical-delivery-manifest.json",
+      "bytes": 2338,
+      "sha256": "97b99a0ce817eb6e0abd2bdc0dc30880a3625c38f505d61ad89d8808352e9796",
+      "git_blob_sha": "c145c417886d65e051ddee11432fa1980797a970"
+    },
+    {
+      "path": "schema/extraction.schema.json",
+      "bytes": 4300,
+      "sha256": "56778149cfafe006d1b25a85506a5c2e56c96a7392f1632a6e5db3d2ec5d8ac1",
+      "git_blob_sha": "cef9ac30e4c76593c734bee42fcbede1ff2a7957"
+    },
+    {
+      "path": "source-export-manifest.json",
+      "bytes": 2227,
+      "sha256": "b4be5fa69eeba01841b5870b38509200edf18fa896a0b4a9ad7459dfe3df3b06",
+      "git_blob_sha": "9e205351c72883ba6dc0652f96ff5bff650507be"
+    },
+    {
+      "path": "src/flyer_export.py",
+      "bytes": 5997,
+      "sha256": "ec120e7b35d11e6fc089f7191ff06d236e0e51fdfeb55d94415e3646a7f5e3ce",
+      "git_blob_sha": "7e73e89b47dce5a5ecbd26b9eb06eee1d24673ce"
+    },
+    {
+      "path": "src/flyer_parser.py",
+      "bytes": 10531,
+      "sha256": "f96b3a55230a5c6f73084d61392a75584975e008a1cea07f5dd471aa780ccac6",
+      "git_blob_sha": "3ea93ec06c121e0a42e707f40ce8b26061d424e2"
+    },
+    {
+      "path": "src/layout_adapter.py",
+      "bytes": 4051,
+      "sha256": "3116c5948fe065e3aaa5dca2dca114fcc6a27f91e6d26f8acdef2f63d16c7256",
+      "git_blob_sha": "49f088df82a8cacb5b4bf463204e7e112e4bc7bf"
+    },
+    {
+      "path": "src/schedule_rules.py",
+      "bytes": 8822,
+      "sha256": "a228a8d3276158b328ce6048bbee6379f17e7865928dc49629e3ca889d49a135",
+      "git_blob_sha": "c2cbde443fb1d30bf3c850520cb8fa5b6e305b40"
+    },
+    {
+      "path": "src/windows_ocr.ps1",
+      "bytes": 3075,
+      "sha256": "929a24a7e749c9030ce5b80ed277dde75ffed59e54627914c03f7983e3b20246",
+      "git_blob_sha": "76ede4184e483cc52803b38a880ba0a6372ab9ea"
+    },
+    {
+      "path": "tests/test_flyer_export.py",
+      "bytes": 4102,
+      "sha256": "e2cfbec8afab637a2616c2474664feb57127ee6928b65779b5ee543242911e66",
+      "git_blob_sha": "38f0ffa102e9ac6531f716ba2dde8128ce73cd16"
+    },
+    {
+      "path": "tests/test_parser.py",
+      "bytes": 6814,
+      "sha256": "d7c2ea4dcebd2d56762c33e76d76173155bc78f4b5f08dfb2be4cf786d829f7c",
+      "git_blob_sha": "c8c252236f593689355083ce2e7e451a3a369939"
+    },
+    {
+      "path": "tests/test_schedule_rules.py",
+      "bytes": 4887,
+      "sha256": "78d51afc89b3dc5386ebc2e98c5369d444589394a11a9ac4004de898f55b60f0",
+      "git_blob_sha": "31600bc9d6cfec4ef2aec305cbd9b4b2a617e058"
+    }
+  ],
+  "self_excluded": "publication-manifest.json"
+}

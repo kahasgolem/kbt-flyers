@@ -1,0 +1,69 @@
+{
+  "project": "Editable-Shabbat-Flyer",
+  "source": "prepared-source/Editable-Shabbat-Flyer",
+  "copied_at": "2026-10-28",
+  "status": "historical-source-receipt-see-publication-manifest-for-current-tree",
+  "publication_ready": false,
+  "activation_enabled": false,
+  "note": "Offline parser/calculation/export contract only. Original flyers, OCR evidence and evidence-dependent tests omitted. Full editable visual template/rendering remains a gap.",
+  "source_files": [
+    {
+      "path": "schema/extraction.schema.json",
+      "sha256": "56778149cfafe006d1b25a85506a5c2e56c96a7392f1632a6e5db3d2ec5d8ac1",
+      "bytes": 4300
+    },
+    {
+      "path": "src/flyer_export.py",
+      "sha256": "ec120e7b35d11e6fc089f7191ff06d236e0e51fdfeb55d94415e3646a7f5e3ce",
+      "bytes": 5997
+    },
+    {
+      "path": "src/flyer_parser.py",
+      "sha256": "f96b3a55230a5c6f73084d61392a75584975e008a1cea07f5dd471aa780ccac6",
+      "bytes": 10531
+    },
+    {
+      "path": "src/layout_adapter.py",
+      "sha256": "3116c5948fe065e3aaa5dca2dca114fcc6a27f91e6d26f8acdef2f63d16c7256",
+      "bytes": 4051
+    },
+    {
+      "path": "src/schedule_rules.py",
+      "sha256": "a228a8d3276158b328ce6048bbee6379f17e7865928dc49629e3ca889d49a135",
+      "bytes": 8822
+    },
+    {
+      "path": "src/windows_ocr.ps1",
+      "sha256": "929a24a7e749c9030ce5b80ed277dde75ffed59e54627914c03f7983e3b20246",
+      "bytes": 3075
+    },
+    {
+      "path": "tests/test_flyer_export.py",
+      "sha256": "e2cfbec8afab637a2616c2474664feb57127ee6928b65779b5ee543242911e66",
+      "bytes": 4102
+    },
+    {
+      "path": "tests/test_parser.py",
+      "sha256": "d7c2ea4dcebd2d56762c33e76d76173155bc78f4b5f08dfb2be4cf786d829f7c",
+      "bytes": 6814
+    },
+    {
+      "path": "tests/test_schedule_rules.py",
+      "sha256": "78d51afc89b3dc5386ebc2e98c5369d444589394a11a9ac4004de898f55b60f0",
+      "bytes": 4887
+    }
+  ],
+  "blocked_files": [],
+  "excluded_categories": [
+    "secrets",
+    "sessions",
+    "queues",
+    "runtime state",
+    "private corpora",
+    "media",
+    "generated dist/caches",
+    "machine configuration",
+    "live startup scripts",
+    "node_modules"
+  ]
+}

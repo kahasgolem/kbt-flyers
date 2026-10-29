@@ -1,0 +1,13 @@
+.env*
+node_modules/
+__pycache__/
+*.pyc
+dist/
+private-data/
+state/
+sessions/
+queues/
+logs/
+*.sqlite*
+*.db
+.venv/

@@ -1,0 +1,23 @@
+{
+  "scope": "exact final source candidate; dependency/runtime directories excluded",
+  "rules": [
+    "private keys",
+    "provider token formats",
+    "credential URLs",
+    "literal secret assignments",
+    "email/phone identifiers",
+    "binary/private/runtime file types"
+  ],
+  "unresolved_findings": 0,
+  "reviewed_findings": 0,
+  "review_dispositions": [],
+  "public_payload_excludes": [
+    "private documents and source-derived preview",
+    "media",
+    "edition data",
+    "credentials",
+    "sessions",
+    "runtime state"
+  ],
+  "limitations": "Pattern and source review is not a guarantee against every possible secret. No original Git history or installed runtime was scanned or imported."
+}

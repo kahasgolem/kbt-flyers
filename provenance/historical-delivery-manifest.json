@@ -1,0 +1,72 @@
+{
+  "project": "Editable-Shabbat-Flyer",
+  "kind": "source-only",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "d229432d4e0884b61a8616f6fee4abbb6eb1d3f7362e5f7083b3a8e086027847"
+    },
+    {
+      "path": "agent-manifest.json",
+      "sha256": "2fee557d42e107f845d66c0e89ed95957be83f712d364492dac402b955cf07f4"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "b7f51ef0cc7bbe22c3f6bb050dbec089f6d4c660784da81d438e3a8064500a46"
+    },
+    {
+      "path": "README.md",
+      "sha256": "25bda1f0a649f8c05ece0ef2b10de9ab34329de629cb7f41e802b2e63e04ada9"
+    },
+    {
+      "path": "schema/extraction.schema.json",
+      "sha256": "56778149cfafe006d1b25a85506a5c2e56c96a7392f1632a6e5db3d2ec5d8ac1"
+    },
+    {
+      "path": "SETUP.md",
+      "sha256": "5a0d5b2d211c7da9d0ec9738f93e23a5417347164ad64a1dd40cd5b51052af26"
+    },
+    {
+      "path": "source-export-manifest.json",
+      "sha256": "f57aa15db2afb993f8229d025514c31c07471c2d373fe033f55a89ef2fa9a521"
+    },
+    {
+      "path": "src/flyer_export.py",
+      "sha256": "ec120e7b35d11e6fc089f7191ff06d236e0e51fdfeb55d94415e3646a7f5e3ce"
+    },
+    {
+      "path": "src/flyer_parser.py",
+      "sha256": "f96b3a55230a5c6f73084d61392a75584975e008a1cea07f5dd471aa780ccac6"
+    },
+    {
+      "path": "src/layout_adapter.py",
+      "sha256": "3116c5948fe065e3aaa5dca2dca114fcc6a27f91e6d26f8acdef2f63d16c7256"
+    },
+    {
+      "path": "src/schedule_rules.py",
+      "sha256": "a228a8d3276158b328ce6048bbee6379f17e7865928dc49629e3ca889d49a135"
+    },
+    {
+      "path": "src/windows_ocr.ps1",
+      "sha256": "929a24a7e749c9030ce5b80ed277dde75ffed59e54627914c03f7983e3b20246"
+    },
+    {
+      "path": "STATUS.md",
+      "sha256": "4834fabcb7fffa0256426c6a2a471e924bf222cf08104aafb5cec0238758cf19"
+    },
+    {
+      "path": "tests/test_flyer_export.py",
+      "sha256": "e2cfbec8afab637a2616c2474664feb57127ee6928b65779b5ee543242911e66"
+    },
+    {
+      "path": "tests/test_parser.py",
+      "sha256": "d7c2ea4dcebd2d56762c33e76d76173155bc78f4b5f08dfb2be4cf786d829f7c"
+    },
+    {
+      "path": "tests/test_schedule_rules.py",
+      "sha256": "78d51afc89b3dc5386ebc2e98c5369d444589394a11a9ac4004de898f55b60f0"
+    }
+  ],
+  "activation_enabled": false,
+  "private_data_included": false
+}

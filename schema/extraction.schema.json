@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Offline Shabbat flyer extraction 0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "document_id", "input_kind", "classification", "confidence", "review_required", "automation_eligible", "source_verification", "friday_date", "shabbat_date", "date_evidence_line_ids", "timezone", "issues", "evidence_lines", "entries", "unparsed_line_ids"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "layout_provenance": {"type": "object"},
+    "document_id": {"type": "string", "minLength": 1},
+    "input_kind": {"enum": ["synthetic", "manual_transcription", "local_ocr"]},
+    "classification": {"enum": ["weekly_candidate", "unsupported_special", "unknown"]},
+    "confidence": {"type": "object", "required": ["level", "score"], "properties": {"level": {"const": "unvalidated_rule_match"}, "score": {"type": "null"}}, "additionalProperties": false},
+    "review_required": {"const": true},
+    "automation_eligible": {"const": false},
+    "source_verification": {"type": "object", "required": ["status", "group_jid", "sender_jid", "admin_at_message_time"], "properties": {"status": {"const": "not_verified"}, "group_jid": {"type": "null"}, "sender_jid": {"type": "null"}, "admin_at_message_time": {"type": "null"}}, "additionalProperties": false},
+    "friday_date": {"$ref": "#/$defs/date"},
+    "shabbat_date": {"$ref": "#/$defs/date"},
+    "date_evidence_line_ids": {"$ref": "#/$defs/strings"},
+    "timezone": {"type": "object", "required": ["value", "provenance", "verified"], "properties": {"value": {"enum": ["America/Los_Angeles", null]}, "provenance": {"enum": ["inferred_from_9017_W_Pico_Blvd_LA", "unresolved"]}, "verified": {"const": false}}, "additionalProperties": false},
+    "issues": {"$ref": "#/$defs/strings"},
+    "evidence_lines": {"type": "array", "items": {"type": "object", "required": ["id", "text", "region"], "properties": {"id": {"type": "string"}, "text": {"type": "string"}, "region": {"type": "string"}, "bbox": {"$ref": "#/$defs/bbox"}}}},
+    "unparsed_line_ids": {"$ref": "#/$defs/strings"},
+    "entries": {"type": "array", "items": {"$ref": "#/$defs/entry"}}
+  },
+  "$defs": {
+    "strings": {"type": "array", "items": {"type": "string"}},
+    "date": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+    "time": {"type": ["string", "null"], "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$"},
+    "bbox": {"type": ["array", "null"], "minItems": 4, "maxItems": 4, "items": {"type": "number", "minimum": 0}},
+    "entry": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "label", "section", "category", "original_text", "printed_time", "normalized_time", "all_printed_times", "correction", "date", "applicability", "evidence_line_ids", "bbox", "confidence", "review_required", "issues"],
+      "properties": {
+        "id": {"type": "string"}, "label": {"type": "string"},
+        "section": {"enum": ["erev_shabbat", "shabbat_morning", "shabbat_afternoon", "sunday", "monday_friday", "shiurim"]},
+        "category": {"enum": ["service", "zman_deadline", "class_event", "unknown"]},
+        "original_text": {"type": "string"}, "printed_time": {"type": ["string", "null"]},
+        "normalized_time": {"$ref": "#/$defs/time"},
+        "all_printed_times": {"$ref": "#/$defs/strings"},
+        "correction": {"type": ["object", "null"], "required": ["normalized_time", "provenance", "status"], "properties": {"normalized_time": {"$ref": "#/$defs/time"}, "provenance": {"type": "string", "minLength": 1}, "status": {"enum": ["awaiting_correct_time", "value_supplied"]}}, "additionalProperties": false},
+        "date": {"$ref": "#/$defs/date"},
+        "applicability": {"type": "object", "required": ["printed_section", "resolved_date", "basis"], "properties": {"printed_section": {"type": "string"}, "resolved_date": {"$ref": "#/$defs/date"}, "basis": {"enum": ["friday_header_plus_section_day", "unresolved"]}}, "additionalProperties": false},
+        "evidence_line_ids": {"$ref": "#/$defs/strings"}, "bbox": {"$ref": "#/$defs/bbox"},
+        "confidence": {"const": "unvalidated_rule_match"}, "review_required": {"const": true},
+        "issues": {"$ref": "#/$defs/strings"}
+      }
+    }
+  }
+}
